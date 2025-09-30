@@ -1,26 +1,40 @@
-import Image from "next/image";
+import Link from "next/link"
+import Image from "next/image"
 
 export default function Home() {
   return (
-    <div className="bg-gray-400 flex flex-col items-center gap-6 p-4">
-      <div className="w-full max-w-[600px]">
+    <div className="min-h-screen bg-sky-600 flex flex-col items-center justify-center gap-8 p-4">
+      {/* Logo */}
+      <div className="w-full max-w-md">
         <Image
-          src="/assets/menu web-01.png"
-          alt="Menu page 1"
-          width={800}
-          height={2000}
-          className="rounded-lg w-full h-auto"
+          src="/assets/logo.png"
+          alt="Restaurant Logo"
+          width={400}
+          height={120}
+          className="w-full h-auto"
         />
       </div>
-      <div className="w-full max-w-[600px]">
-        <Image
-          src="/assets/menu web-02.png"
-          alt="Menu page 2"
-          width={800}
-          height={2000}
-          className="rounded-lg w-full h-auto"
-        />
+
+      {/* Navigation Buttons */}
+      <div className="flex flex-col gap-6 w-full max-w-md">
+        <Link
+          href="/alimentos"
+          className="bg-white hover:bg-gray-100 transition-colors rounded-lg shadow-lg overflow-hidden group"
+        >
+          <div className="p-6 text-center">
+            <h2 className="text-2xl font-bold text-sky-600 group-hover:text-sky-700">Menú Alimentos</h2>
+          </div>
+        </Link>
+
+        <Link
+          href="/bebidas"
+          className="bg-white hover:bg-gray-100 transition-colors rounded-lg shadow-lg overflow-hidden group"
+        >
+          <div className="p-6 text-center">
+            <h2 className="text-2xl font-bold text-sky-600 group-hover:text-sky-700">Menú Bebidas</h2>
+          </div>
+        </Link>
       </div>
     </div>
-  );
+  )
 }
