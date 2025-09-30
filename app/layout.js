@@ -12,9 +12,20 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "Mr Robalo",
-  description: "",
-};
+  title: "Mr Robalo - Menú",
+  description: "Descubre nuestro delicioso menú de alimentos y bebidas en Mr Robalo",
+  
+  icons: {
+    icon: "/logo.png",
+    apple: "/logo.png",
+  },
+  openGraph: {
+    title: "Mr Robalo - Menú",
+    description: "Descubre nuestro delicioso menú de alimentos y bebidas",
+    images: ["/logo.png"],
+    type: "website",
+  },
+}
 
 export default function RootLayout({ children }) {
   return (
