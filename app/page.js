@@ -22,7 +22,7 @@ export default function Home() {
           className="bg-white hover:bg-gray-100 transition-colors rounded-lg shadow-lg overflow-hidden group"
         >
           <div className="p-6 text-center">
-            <h2 className="text-2xl font-bold text-sky-600 group-hover:text-sky-700">Menú Alimentos</h2>
+            <h2 className="text-2xl font-bold text-sky-600 group-hover:text-sky-700">Alimentos</h2>
           </div>
         </Link>
 
@@ -31,7 +31,7 @@ export default function Home() {
           className="bg-white hover:bg-gray-100 transition-colors rounded-lg shadow-lg overflow-hidden group"
         >
           <div className="p-6 text-center">
-            <h2 className="text-2xl font-bold text-sky-600 group-hover:text-sky-700">Menú Bebidas</h2>
+            <h2 className="text-2xl font-bold text-sky-600 group-hover:text-sky-700">Bebidas</h2>
           </div>
         </Link>
       </div>
